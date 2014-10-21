@@ -1,0 +1,82 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  text-rendering: optimizeLegibility;
+  background-color: $base-background-color;
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font-family;
+  line-height: $header-line-height;
+}
+
+h1 {
+  font-size: $h1-font-size;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+h3 {
+  font-size: $h3-font-size;
+}
+
+h4 {
+  font-size: $h4-font-size;
+  border-bottom: $base-border;
+  display: inline-block;
+  font-family: $sans-serif;
+  font-weight: 700;
+  margin-bottom: 2em;
+  padding: .3em 0;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: $h5-font-size;
+}
+
+h6 {
+  font-size: $h6-font-size;
+}
+
+p {
+  margin: 0 0 ($base-spacing / 2);
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  transition: color 0.2s linear;
+  color: $base-link-color;
+  text-decoration: none;
+  font-weight: bold;
+
+  &:hover {
+    color: $hover-link-color;
+  }
+
+  &:active, &:focus {
+    color: $hover-link-color;
+    outline: none;
+    border-color: $hover-link-color;
+  }
+}
+
+blockquote {
+  margin: 1.75em 0 1.75em -2.2em;
+  padding: 0 0 0 1.75em;
+  border-left: $medium-gray 0.4em solid;
+  font-style: italic;
+  font-weight: 300
+}

@@ -1,0 +1,28 @@
+.article-wrap {
+  margin-left: 18em;
+  padding: 2em 4em;
+}
+
+.article {
+  margin: 0 auto;
+  max-width: 48em;
+}
+
+.article-date {
+  color: $medium-gray;
+  font-style: italic;
+  font-size: .9em;
+}
+
+.article-text {
+  margin-top: 1em;
+
+  p {
+    margin-bottom: 2em;
+  }
+
+  h2,
+  h3 {
+    margin: 2em 0;
+  }
+}

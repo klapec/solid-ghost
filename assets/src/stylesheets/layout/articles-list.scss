@@ -1,0 +1,38 @@
+.articles-list-wrap {
+  margin-left: 18em;
+  padding: 2em 4em;
+}
+
+.articles-list {
+  margin: 0 auto;
+  max-width: 48em;
+}
+
+.article-preview {
+  padding: 3em 0;
+  border-bottom: $lighter-border;
+}
+
+.article-preview-date {
+  color: $medium-gray;
+  font-style: italic;
+  font-size: .9em;
+  margin-bottom: .3em;
+}
+
+.article-preview-title {
+  margin: 0.5em 0;
+}
+
+.article-preview-text {
+  text-align: left;
+  font-size: 1.2em;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.6em;
+  margin-bottom: .9em;
+
+  &:after {
+    content: " ...";
+  }
+}
