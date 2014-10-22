@@ -69,7 +69,6 @@ header {
 
 .header-nav {
   flex: 0 1 auto;
-  order: 1;
 }
 
 .nav-main h5 {
@@ -77,22 +76,6 @@ header {
   margin-bottom: 0;
   line-height: 2;
   font-family: $sans-serif;
-}
-
-.nav-control {
-  display: none;
-}
-
-.nav-button {
-  height: 40px;
-  width: 40px;
-  transition: fill 0.1s linear;
-  fill: $medium-gray;
-
-  &:hover {
-    fill: $hover-link-color;
-    cursor: pointer;
-  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -129,7 +112,7 @@ header {
   }
 
   .header-nav {
-    order: 0;
+    display: none;
   }
 }
 
@@ -141,7 +124,7 @@ header {
 
   .header-info {
     display: inline-block;
-    margin-left: 2em;
+    margin: 2em 0 0 2em;
   }
 
   .header-photo {
@@ -150,15 +133,10 @@ header {
     margin: 0;
   }
 
-   .header-title, 
-   .header-desc, {
-    font-size: .7em;
-   }
-
   .header-social {
     display: inline-block;
     float: right;
-    margin: 3.5em 2em 3em;
+    margin: 3.5em 2em 3em 0;
   }
 
   .social-icon {
@@ -166,10 +144,4 @@ header {
     width: 50px;
     margin-left: 1em;
   }
-
-  .header-nav {
-    display: inline-block;
-    // font-size: .7em;
-  }
-
 }
