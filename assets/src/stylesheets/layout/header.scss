@@ -133,3 +133,23 @@ header {
   //   margin-right: 1em;
   // }
 }
+
+@media only screen and (max-width: 480px) {
+  header {
+    display: block;
+    text-align: start;
+  }
+
+  .header-info {
+    display: inline-block;
+    margin: 1em;
+  }
+
+  .header-social {
+    display: inline-block;
+    margin: 1em;
+    float: right;
+  }
+
+
+}
