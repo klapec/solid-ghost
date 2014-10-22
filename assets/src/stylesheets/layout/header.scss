@@ -15,14 +15,17 @@ header {
   width: 18em;
 }
 
+.header-info {
+  flex: 0 0 auto;
+  margin: 1em 0;
+}
+
 .header-photo {
   border-radius: 50%;
   border: 4px solid $medium-gray;
   box-sizing: content-box;
   width: 100px;
   height: 100px;
-  flex: 0 1 auto;
-  display: inline-block;
   transition: border-color 0.2s linear;
 
   &:hover {
@@ -30,16 +33,14 @@ header {
   }
 }
 
-.header-info {
-  flex: 0 0 auto;
-  margin: 1em 0;
-}
-
 .header-title {
   max-width: 100%;
-  margin-bottom: .3em;
-  margin-top: 0;
+  margin: .3em 0;
   font-family: $sans-serif;
+
+  a:hover {
+    color: $white;
+  }
 }
 
 .header-desc {
@@ -68,12 +69,13 @@ header {
 
 .header-nav {
   flex: 0 1 auto;
+  order: 1;
 }
 
 .nav-main h5 {
   text-transform: none;
   margin-bottom: 0;
-  margin-top: .5em;
+  line-height: 2;
   font-family: $sans-serif;
 }
 
@@ -105,21 +107,20 @@ header {
     box-shadow: 0 0 .5em rgba(0,0,0,.3);
   }
 
+  .header-info {
+    flex: 0 1 auto;
+    margin: 0 0 0 2em;
+    vertical-align: middle;
+  }
+
   .header-photo {
     width: 60px;
     height: 60px;
-    margin: 0 1em;
-    vertical-align: middle;
-  }
-
-  .header-info {
-    flex: 1 2 auto;
-    margin-top: 0;
-    vertical-align: middle;
+    margin: 0;
   }
 
   .header-social {
-    margin: 0 1em;
+    margin: 0 2em;
   }
 
   .social-icon {
@@ -128,11 +129,7 @@ header {
   }
 
   .header-nav {
-    float: right;
-  }
-
-  .nav-main {
-    display: none;
+    order: 0;
   }
 }
 
@@ -144,16 +141,35 @@ header {
 
   .header-info {
     display: inline-block;
-    margin: 1.5em 0;
+    margin-left: 2em;
   }
+
+  .header-photo {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+  }
+
+   .header-title, 
+   .header-desc, {
+    font-size: .7em;
+   }
 
   .header-social {
     display: inline-block;
-    margin: 1em 1em 1em 0;
     float: right;
+    margin: 3.5em 2em 3em;
   }
 
-   .header-title, .header-desc {
-    font-size: .7em;
-   }
+  .social-icon {
+    height: 50px;
+    width: 50px;
+    margin-left: 1em;
+  }
+
+  .header-nav {
+    display: inline-block;
+    // font-size: .7em;
+  }
+
 }
