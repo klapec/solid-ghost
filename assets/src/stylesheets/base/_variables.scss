@@ -25,18 +25,21 @@ $base-spacing: $base-line-height * 1em;
 $base-z-index: 0;
 
 // Colors
-$green:             #156f78;
-$dark-gray:         #333;
-$medium-gray:       #999;
+$blue:              #3887be;
+$blue-light:        #3bb2d0;
+$dark-gray:         #2a3740;
+$medium-gray:       #3c4e5a;
 $light-gray:        #ddd;
 $lighter-gray:      #f5f2f0;
+$white:             #fff;
 
 // Background Color
 $base-background-color: #fff;
 
 // Font Colors
 $base-font-color: $dark-gray;
-$base-accent-color: $green;
+$base-accent-color: $blue;
+$header-font-color: $white;
 
 // Link Colors
 $base-link-color: $base-font-color;
