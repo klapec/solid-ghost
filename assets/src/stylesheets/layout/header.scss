@@ -19,8 +19,8 @@ header {
   border-radius: 50%;
   border: 4px solid $medium-gray;
   box-sizing: content-box;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   flex: 0 1 auto;
   display: inline-block;
   transition: border-color 0.2s linear;
@@ -32,7 +32,7 @@ header {
 
 .header-info {
   flex: 0 0 auto;
-  margin-top: 1em;
+  margin: 1em 0;
 }
 
 .header-title {
@@ -43,6 +43,7 @@ header {
 }
 
 .header-desc {
+  color: $white;
   font-size: .75em;
   margin: 0;
   font-weight: 400;
@@ -55,13 +56,13 @@ header {
 }
 
 .social-icon {
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
   transition: fill 0.1s linear;
   fill: $medium-gray;
 
   &:hover {
-    fill: $blue;
+    fill: $hover-link-color;
   }
 }
 
@@ -87,15 +88,16 @@ header {
   fill: $medium-gray;
 
   &:hover {
-    fill: $blue;
+    fill: $hover-link-color;
     cursor: pointer;
   }
 }
 
 @media only screen and (max-width: 900px) {
   header {
+    position: relative;
     width: 100%;
-    height: 5em;
+    height: 10em;
     justify-content: space-between;
     text-align: none;
     align-items: center;
@@ -104,8 +106,8 @@ header {
   }
 
   .header-photo {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     margin: 0 1em;
     vertical-align: middle;
   }
@@ -120,6 +122,11 @@ header {
     margin: 0 1em;
   }
 
+  .social-icon {
+    height: 60px;
+    width: 60px;
+  }
+
   .header-nav {
     float: right;
   }
@@ -127,11 +134,6 @@ header {
   .nav-main {
     display: none;
   }
-
-  // .nav-control {
-  //   display: inline-block;
-  //   margin-right: 1em;
-  // }
 }
 
 @media only screen and (max-width: 480px) {
@@ -154,5 +156,4 @@ header {
    .header-title, .header-desc {
     font-size: .7em;
    }
-
 }

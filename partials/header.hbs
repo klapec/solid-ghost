@@ -1,12 +1,14 @@
-<header>
-{{!-- <header class="animated bounceInLeft"> --}}
-  <a href="/" title="Home">
-    <img src="{{@blog.logo}}" class="header-photo">
-  </a>
-  <a href="/" class="header-info" title="Home">
-    <h3 class="header-title">{{@blog.title}}</h3>
+<header class="animated fadeInLeft">
+  <div class="header-info">
+    <a href="/" title="Home">
+      <img src="{{@blog.logo}}" class="header-photo">
+    </a>
+    <h3 class="header-title">
+      <a href="/" class="header-details" title="Home">
+      {{@blog.title}}</a>
+    </h3>
     <p class="header-desc">{{@blog.description}}</p>
-  </a>
+  </div>
   <div class="header-social">
     <nav class="nav-social">
       <a href="http://github.com/klapec" title="Check my Github profile">
@@ -29,12 +31,5 @@
       <h5><a href="/articles" title="Articles">Articles</a></h5>
       <h5><a href="/about" title="About">About</a></h5>
     </nav>
-    <div class="nav-mobile">
-      <div class="nav-control">
-        <svg width="30px" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 23.532 23.532" fill="#333333" class="nav-button">
-          <path d="m11.766,0c-6.498,0-11.766,5.268-11.766,11.766s5.268,11.766 11.766,11.766c6.498,0 11.766-5.268 11.766-11.766s-5.268-11.766-11.766-11.766zm5.981,16.433h-11.964c-.368,0-.667-.298-.667-.667 0-.368 .299-.667 .667-.667h11.964c.368,0 .667,.298 .667,.667 0,.368-.298,.667-.667,.667zm0-4h-11.964c-.368,0-.667-.298-.667-.667 0-.368 .299-.667 .667-.667h11.964c.368,0 .667,.298 .667,.667 0,.368-.298,.667-.667,.667zm0-4h-11.964c-.368,0-.667-.298-.667-.667 0-.368 .299-.667 .667-.667h11.964c.368,0 .667,.298 .667,.667 0,.368-.298,.667-.667,.667z"/>
-        </svg>
-      </div>
-    </div>
   </div>
 </header>
