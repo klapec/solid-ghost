@@ -26,8 +26,15 @@ hr {
 
 @media only screen and (max-width: 900px) {
   
+  body {
+    text-rendering: auto;
+    -webkit-font-smoothing: auto;
+    -webkit-backface-visibility: auto;
+  }
+
   .content-wrap {
     margin-left: 0;
     padding: 7em 2em;
   }
 }
+

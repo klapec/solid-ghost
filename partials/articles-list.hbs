@@ -3,10 +3,8 @@
     {{#foreach posts}}
     <article class="article-preview">
       <span class="article-preview-date">{{date published_at format="MMMM DD, YYYY"}}</span>
-      <a href="{{url}}" title="{{title}}">
-        <h1 class="article-preview-title">{{title}}</h1>
-        <p class="article-preview-text">{{excerpt}}</p>
-      </a>
+      <h1 class="article-preview-title"><a href="{{url}}" title="{{title}}">{{title}}</a></h1>
+      <p class="article-preview-text">{{excerpt}}</p>
     </article>
     {{/foreach}}
   {{> pagination}}

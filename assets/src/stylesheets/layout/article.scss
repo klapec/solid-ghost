@@ -1,12 +1,17 @@
 .article {
   margin: 0 auto;
   max-width: 48em;
+  padding-bottom: 10em;
 }
 
 .article-date {
   color: $medium-gray;
   font-style: italic;
   font-size: .9em;
+}
+
+.article-title {
+  margin: .5em 0;
 }
 
 .article-text {

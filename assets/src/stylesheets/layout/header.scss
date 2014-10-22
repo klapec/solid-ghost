@@ -142,14 +142,17 @@ header {
 
   .header-info {
     display: inline-block;
-    margin: 1em;
+    margin: 1.5em 0;
   }
 
   .header-social {
     display: inline-block;
-    margin: 1em;
+    margin: 1em 1em 1em 0;
     float: right;
   }
 
+   .header-title, .header-desc {
+    font-size: .7em;
+   }
 
 }
