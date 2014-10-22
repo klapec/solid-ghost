@@ -6,3 +6,7 @@ Minimal theme for Ghost with focus on typography.
 
 1. ``npm install``
 2. ``gulp``
+
+
+## Screenshot
+![Screenshot](screenshot.png)
