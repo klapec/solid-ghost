@@ -1,8 +1,10 @@
 @import 'base/normalize';
 @import 'base/variables';
 @import 'base/typography';
-@import 'base/base';
+@import 'base/helpers';
+@import 'base/prism';
 
+@import 'layout/base';
 @import 'layout/header';
 @import 'layout/articles-list';
 @import 'layout/article';
@@ -10,5 +12,6 @@
 
 @import 'components/pagination';
 @import 'components/buttons';
+@import 'components/icons';
 
-@import 'base/highlight';
+

@@ -1,0 +1,28 @@
+.social-icon { 
+  border: 2px solid $medium-gray;
+  border-radius: 50%;
+  transition: border-color .2s linear;
+
+  &:hover {
+    border-color: $hover-link-color;
+  }
+}
+
+.header-social-icon {
+  height: 40px;
+  width: 40px;
+  fill: rgba(42, 55, 64, .1);
+}
+
+.footer-social-icon {
+  border-color: $dark-gray;
+
+  .icon-github {
+    fill: $dark-gray;
+  }
+
+  .icon-email {
+    fill: $dark-gray;
+  }
+}
+

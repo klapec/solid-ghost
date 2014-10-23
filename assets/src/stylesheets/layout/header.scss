@@ -1,4 +1,6 @@
 header {
+  background: no-repeat;
+  background-size: cover;
   height: 100%;
   padding: 0;
   position: fixed;
@@ -6,7 +8,7 @@ header {
 }
 
 .header-overlay {
-  background-color: rgba(42, 55, 64, .9); //$medium-gray at 90%
+  background: rgba(42, 55, 64, .8); //$medium-gray @ 80%
   position: absolute;
   top: 0;
   right: 0;
@@ -49,29 +51,16 @@ header {
 }
 
 .header-desc {
+  margin: 0;  
   color: $white;
-  font-size: .75em;
-  margin: 0;
-  font-weight: 400;
+  font-family: $serif;
+  font-size: .9em;
 }
 
 .header-social {
   flex: 0 0 auto;
   margin: 1.4em 0;
   text-align: center;
-}
-
-.social-icon {
-  height: 40px;
-  width: 40px;
-  fill: rgba(42, 55, 64, .1);
-  border: 2px solid $medium-gray;
-  border-radius: 50%;
-  transition: border-color .2s linear;
-
-  &:hover {
-    border-color: $hover-link-color;
-  }
 }
 
 .header-nav {
@@ -94,7 +83,6 @@ header {
     text-align: none;
     align-items: center;
     flex-direction: row;
-    box-shadow: 0 0 .5em rgba(0,0,0,.3);
   }
 
   .header-info {
@@ -104,8 +92,8 @@ header {
   }
 
   .header-photo {
-    width: 60px;
     height: 60px;
+    width: 60px;
     margin: 0;
   }
 

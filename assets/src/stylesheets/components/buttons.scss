@@ -22,13 +22,14 @@
 }
 
 .button-footer-nav {
-  border-color: $medium-gray;
+  border-color: $dark-gray;
+  color: $dark-gray;
   display: none;
   margin: 0;
 
   &:hover {
     border-color: $hover-link-color;
-    color: $medium-gray;
+    color: $dark-gray;
   }
 }
 

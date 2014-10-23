@@ -9,25 +9,15 @@ body {
   color: $base-font-color;
 }
 
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: $lighter-border;
-  margin: 3.2em 0;
-  padding: 0;
-}
-
 .content-wrap {
   margin-left: 18em;
-  padding: 2em 4em;
+  padding: 4em;
 }
 
 @media only screen and (max-width: 900px) {
 
   .content-wrap {
     margin-left: 0;
-    padding: 2em 2em;
+    padding: 4em 2em 0;
   }
 }
-
