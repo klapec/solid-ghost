@@ -1,12 +1,13 @@
 .articles-list {
   margin: 0 auto;
   max-width: 48em;
+  padding-top: 3em;
 }
 
 .article-preview {
   border-bottom: $lighter-border;
   margin-bottom: 3em;
-  padding-bottom: 1em;
+  padding-bottom: 3em;
 }
 
 .article-preview-date {
@@ -17,7 +18,7 @@
 }
 
 .article-preview-title {
-  margin: 0.5em 0;
+  margin: 1em 0;
 }
 
 .article-preview-text {
@@ -26,9 +27,16 @@
   font-style: italic;
   font-weight: 400;
   line-height: 1.6em;
-  margin-bottom: .9em;
+  margin-bottom: 0;
 
   &:after {
     content: " ...";
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+  .articles-list {
+    padding-top: 0;
   }
 }

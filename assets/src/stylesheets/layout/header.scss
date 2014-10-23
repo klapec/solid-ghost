@@ -1,18 +1,23 @@
 header {
-  background-color: $dark-gray;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  box-shadow: 0 0 .5em rgba(0,0,0,.1);
+  height: 100%;
+  padding: 0;
+  position: fixed;
+  width: 18em;
+}
+
+.header-overlay {
+  background-color: rgba(42, 55, 64, .9); //$medium-gray at 90%
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 100%;
-  left: 0;
-  padding: 0;
-  position: fixed;
-  top: 0;
-  width: 18em;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 .header-info {
@@ -60,10 +65,13 @@ header {
   height: 60px;
   width: 60px;
   transition: fill 0.1s linear;
-  fill: $medium-gray;
+  fill: rgba(42, 55, 64, .1);
+  border: 2px solid $medium-gray;
+  border-radius: 50%;
+  transition: border-color .2s linear;
 
   &:hover {
-    fill: $hover-link-color;
+    border-color: $hover-link-color;
   }
 }
 
@@ -124,12 +132,12 @@ header {
 
   .header-info {
     display: inline-block;
-    margin: 2em 0 0 1em;
+    margin-left: 1em;
   }
 
   .header-photo {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     margin: 0;
   }
 

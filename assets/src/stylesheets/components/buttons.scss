@@ -1,0 +1,22 @@
+.button {
+  display: block;
+  position: relative;
+  padding: .5em .8em;
+  font-family: $sans-serif;
+  font-weight: bold;
+  font-size: .7em;
+  border: 2px solid $white;
+  border-radius: $base-border-radius;
+  margin: 1em;
+  transition: border-color .2s linear;
+}
+
+.button-nav {
+  border-color: $medium-gray;
+  color: $white;
+
+  &:hover {
+    border-color: $hover-link-color;
+    color: $white;
+  }
+}
