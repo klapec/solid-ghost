@@ -2,7 +2,7 @@
   <main class="articles-list">
     {{#foreach posts}}
     <article class="article-preview">
-      <span class="article-preview-date">{{date published_at format="MMMM DD, YYYY"}}</span>
+      <span class="article-preview-date">{{date published_at format="DD MMMM YYYY"}}</span>
       <h1 class="article-preview-title"><a href="{{url}}" title="{{title}}">{{title}}</a></h1>
       <p class="article-preview-text">{{excerpt}}</p>
     </article>
