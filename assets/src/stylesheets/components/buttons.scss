@@ -1,7 +1,7 @@
 .button {
   display: block;
   position: relative;
-  padding: .5em .8em;
+  padding: .5em 2em;
   font-family: $sans-serif;
   font-weight: bold;
   font-size: .7em;
@@ -11,12 +11,30 @@
   transition: border-color .2s linear;
 }
 
-.button-nav {
+.button-header-nav {
   border-color: $medium-gray;
   color: $white;
 
   &:hover {
     border-color: $hover-link-color;
     color: $white;
+  }
+}
+
+.button-footer-nav {
+  border-color: $medium-gray;
+  display: none;
+  margin: 0;
+
+  &:hover {
+    border-color: $hover-link-color;
+    color: $medium-gray;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+  .button-footer-nav {
+    display: inline-block;
   }
 }
