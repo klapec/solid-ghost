@@ -1,23 +1,13 @@
 footer {
   display: none;
-  height: auto;
-  text-align: justify;
-  -ms-text-justify: distribute-all-lines;
-  text-justify: distribute-all-lines;
-  width: 100%;
-  margin-top: 3em;
-}
-
-footer div {
-  display: inline-block;
-  vertical-align: top;
-  *display: inline;
-  zoom: 1;
 }
 
 @media only screen and (max-width: 900px) {
 
   footer {
     display: inline-block;
+    text-align: justify;
+    width: 100%;
+    margin-top: 3em;
   }
 }
