@@ -117,12 +117,20 @@ header {
   }
 
   .header-info {
-    margin: 0;
     display: inline-block;
+    float: left;
+    height: 100%;
+    margin: 0;
+    padding-left: 2em;
+    padding-top: 1em;
   }
 
   .header-nav {
-    margin: 0;
     display: inline-block;
+    float: right;
+    height: 100%;
+    margin: 0;
+    padding-right: 2em;
+    padding-top: 1em;
   }
 }
