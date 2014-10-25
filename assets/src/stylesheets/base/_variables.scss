@@ -24,7 +24,7 @@ $base-z-index: 0;
 
 // Colors
 $blue:              #3887be;
-$blue-light:        #3bb2d0;
+$light-blue:        #3bb2d0;
 $dark-gray:         #2a3740;
 $medium-gray:       #5f686f;
 $light-gray:        #ddd;
@@ -36,12 +36,14 @@ $base-background-color: $white;
 
 // Font Colors
 $base-font-color: $dark-gray;
-$base-accent-color: $blue-light;
+$base-accent-color: $light-blue;
 $header-font-color: $white;
 
 // Link Colors
 $base-link-color: $base-font-color;
 $hover-link-color: $base-accent-color;
+$article-link-color: $blue;
+$article-link-color-hover: $light-blue;
 
 // Border color
 $base-border: 1px solid $dark-gray;

@@ -9,10 +9,10 @@ var basePath = {
 };
 
 var srcAssets = {
-  styles        : basePath.src + 'stylesheets/',
+  styles        : basePath.src + 'stylesheets/**/*',
   scripts       : basePath.src + 'scripts/*.js',
   vendorScripts : basePath.src + 'scripts/vendor/**/*.js',
-  images        : basePath.src + 'images/*'
+  images        : basePath.src + 'images/**/*'
 };
 
 var destAssets = {
@@ -33,7 +33,7 @@ function errorAlert(err) {
 }
 
 gulp.task('default', ['styles', 'scripts', 'vendorScripts', 'images'], function() {
-  gulp.watch(srcAssets.styles + '**/*', ['styles']);
+  gulp.watch(srcAssets.styles, ['styles']);
   gulp.watch(srcAssets.scripts, ['scripts']);
   gulp.watch(srcAssets.vendorScripts, ['vendorScripts']);
   gulp.watch(srcAssets.images, ['images']);
@@ -89,7 +89,7 @@ gulp.task('vendorScripts', function() {
 });
 
 gulp.task('images', function() {
-  return gulp.src(srcAssets.images + '**/*')
+  return gulp.src(srcAssets.images)
     .pipe($.plumber({errorHandler: errorAlert}))
     .pipe($.changed(destAssets.images))
     .pipe($.imagemin({

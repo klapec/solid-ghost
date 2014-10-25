@@ -20,6 +20,14 @@
     margin-bottom: 2em;
   }
 
+  a {
+    color: $article-link-color;
+
+    &:hover {
+      color: $article-link-color-hover;
+    }
+  }
+
   h2,
   h3 {
     margin: 1em 0;
