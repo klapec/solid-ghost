@@ -1,7 +1,10 @@
 var gulp          = require('gulp');
 var gutil         = require('gulp-util');
 var jshintStylish = require('jshint-stylish');
+var psi           = require('psi');
 var $             = require('gulp-load-plugins')();
+
+var url = 'http://andrzejklapec.pl'; // INSERT YOUR SITE'S URL HERE
 
 var basePath = {
   src   : 'assets/src/',
@@ -103,4 +106,22 @@ gulp.task('images', function() {
         message: "<%= file.relative %>",
         sound: "Glass"
     }));
+});
+
+gulp.task('perf', ['perfMobile', 'perfDesktop']);
+
+gulp.task('perfMobile', function(cb) {
+  psi({
+    nokey: 'true',
+    url: url,
+    strategy: 'mobile',
+  }, cb);
+});
+
+gulp.task('perfDesktop', function(cb) {
+  psi({
+    nokey: 'true',
+    url: url,
+    strategy: 'desktop',
+  }, cb);
 });
