@@ -14,9 +14,11 @@ header {
   right: 0;
   bottom: 0;
   left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column nowrap;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -64,7 +66,7 @@ header {
 }
 
 .header-nav {
-  flex: 0 1 auto;
+  flex: 0 0 auto;
 }
 
 .nav-main h5 {
@@ -79,6 +81,9 @@ header {
     position: relative;
     width: 100%;
     height: 10em;
+  }
+
+  .header-overlay {
     justify-content: space-between;
     text-align: none;
     align-items: center;
@@ -86,9 +91,8 @@ header {
   }
 
   .header-info {
-    flex: 0 1 auto;
-    margin: 0 0 0 2em;
-    vertical-align: middle;
+    flex: 0 0 auto;
+    margin-left: 2em;
   }
 
   .header-photo {
@@ -100,22 +104,26 @@ header {
   .header-social {
     display: none;
   }
-}
 
-@media only screen and (max-width: 480px) {
-  header {
-    display: block;
-    text-align: start;
-  }
-
-  .header-info {
-    display: inline-block;
-    margin-left: 1em;
-  }
-
-  .header-photo {
-    width: 50px;
-    height: 50px;
-    margin: 0;
+  .header-nav {
+    margin-right: 2em;
   }
 }
+
+// @media only screen and (max-width: 480px) {
+//   header {
+//     display: block;
+//     text-align: start;
+//   }
+
+//   .header-info {
+//     display: inline-block;
+//     margin-left: 1em;
+//   }
+
+//   .header-photo {
+//     width: 50px;
+//     height: 50px;
+//     margin: 0;
+//   }
+// }
