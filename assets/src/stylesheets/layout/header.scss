@@ -110,20 +110,19 @@ header {
   }
 }
 
-// @media only screen and (max-width: 480px) {
-//   header {
-//     display: block;
-//     text-align: start;
-//   }
+@media only screen and (max-width: 480px) {
 
-//   .header-info {
-//     display: inline-block;
-//     margin-left: 1em;
-//   }
+  .header-overlay {
+    display: block;
+  }
 
-//   .header-photo {
-//     width: 50px;
-//     height: 50px;
-//     margin: 0;
-//   }
-// }
+  .header-info {
+    margin: 0;
+    display: inline-block;
+  }
+
+  .header-nav {
+    margin: 0;
+    display: inline-block;
+  }
+}
