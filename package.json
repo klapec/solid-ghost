@@ -4,7 +4,7 @@
   "description": "Minimal theme for Ghost with focus on typography.",
   "repository": {
     "type": "git",
-    "url": "http://github.com/klapec/solid-ghost.git"
+    "url": "https://github.com/klapec/solid-ghost.git"
   },
   "author": "Andrzej Kłapeć",
   "license": "MIT",
